@@ -19,7 +19,7 @@ import org.omg.Messaging.SYNC_WITH_TRANSPORT;
  * 通过这两次遍历，分配的糖果就可以满足题目要求了。
  * 这里的贪心策略即为，在每次遍历中，只考虑并更新相邻一侧的大小关系。
  */
-public class DayTwo {
+public class Problem2 {
     public static void main(String[] args) {
         int[] rat={1,2,87,87,87,2,1};
         System.out.println(candy(rat));

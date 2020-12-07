@@ -11,7 +11,7 @@ import java.util.Arrays;
  * 这里的贪心策略是，给剩余孩子里最小饥饿度的孩子分配最小的能饱腹的饼干。
  * 先排序后选择
  */
-public class DayOne {
+public class Problem1 {
     public static void main(String[] args) {
         //小孩饥饿度
         int[] g = {10, 9, 8, 7, 10, 9, 8, 7};
