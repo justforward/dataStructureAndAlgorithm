@@ -1,4 +1,4 @@
-package leetcode.bit;
+package leetcode.bit.leetcode_bank;
 
 /*
     题目：

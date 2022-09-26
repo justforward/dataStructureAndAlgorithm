@@ -38,6 +38,7 @@ public class l_17 {
 
         // diff 就是这个异或值的lowbit
         int o = 0;
+        // 这个是位置为0的一组
         for (int i = 1; i <= n; i++) {
             if ((diff & i) != 0) o ^= i;
         }

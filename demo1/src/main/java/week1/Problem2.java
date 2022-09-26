@@ -1,4 +1,4 @@
-package week1;
+package demo1.src.main.java.week1;
 
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
