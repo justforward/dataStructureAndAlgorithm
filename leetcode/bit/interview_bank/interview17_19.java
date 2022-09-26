@@ -6,7 +6,7 @@ package leetcode.bit.interview_bank;
          但其中缺了两个数字。你能在 O(N) 时间内只用 O(1) 的空间找到它们吗？
 
     思路：1) 位运算 ^
-         2）将题目变成只寻找确实的一个数的数组。
+         2）将题目变成只寻找缺失一个数的数组。
  */
 public class interview17_19 {
     public static void main(String[] args) {
@@ -17,19 +17,40 @@ public class interview17_19 {
 
     public int[] missingTwo(int[] nums) {
         // 补全当前这个位
-        int n = nums.length;
+        int n = nums.length + 2;
         int bit = 0;
         // 首先对所有nums进行异或
         for (int num : nums) bit ^= num;
-        for (int i = 1; i <= n + 2; i++) {
+        for (int i = 1; i <= n; i++) {
             // 从补全的地方进行异或
             bit ^= i;
         }
 
-        // 有两个数是不相等的 至少有一位是1
-        // 将数组进行切分，每个数组都包含了一个缺失的数
+        // 通过lowbit算法，将原始数组分为两部分，lsb位置为0的一组，lsb位置为1的为一组
+        int lsb = (bit == Integer.MIN_VALUE ? bit : bit & (-bit));
 
-        return new int[]{};
+        // 根据当前的位对nums进行区分，一个是等于0、一个是等于1
+        int type1 = 0, type2 = 0;
+        for (int num : nums) {
+            // 根据某一位将数据进行区分
+            if ((num & lsb) != 0) {
+                type1 ^= num;
+            } else {
+                type2 ^= num;
+            }
+        }
 
+        //  将当前的值和n进行异或
+        for (int i = 1; i <= n; i++) {
+            if ((i & lsb) != 0) {
+                type1 ^= i;
+            } else {
+                type2 ^= i;
+            }
+        }
+
+        return new int[]{type1, type2};
     }
 }
+
+
