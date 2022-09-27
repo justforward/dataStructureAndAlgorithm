@@ -53,19 +53,26 @@ public class leetcode_2411 {
     public int[] smallestSubarrays(int[] nums) {
         int n = nums.length;
         int[] ans = new int[n];
-        List<int[]> ors = new ArrayList<>(); // 按位或的值 + 对应子数组的右端点的最小值
+        // 按位或的值 + 对应子数组的右端点的最小值  所有按位或的结果都记录在这个ors中
+        List<int[]> ors = new ArrayList<>();
         for (int i = n - 1; i >= 0; i--) {
             ors.add(new int[]{0, i});
             int k = 0;
             // 根据ors数组的值进行| 操作
             for (int[] or : ors) {
+                // 将之前的结果与当前值进行或操作
                 or[0] |= nums[i];
-                if (ors.get(k)[0] == or[0])
-                    ors.get(k)[1] = or[1]; // 合并相同值，下标取最小的
-                else ors.set(++k, or);
+                if (ors.get(k)[0] == or[0]) {
+                    // 合并相同值，下标取最小的
+                    ors.get(k)[1] = or[1];
+
+                } else {
+                    ors.set(++k, or);
+                }
             }
+            // 将后面多余的部分给去掉
             ors.subList(k + 1, ors.size()).clear();
-            // 本题只用到了 ors[0]，如果题目改成任意给定数值，可以在 ors 中查找
+            // 得到第一个里面的 1位置 与i相减+1 得到最长的数组
             ans[i] = ors.get(0)[1] - i + 1;
         }
         return ans;
