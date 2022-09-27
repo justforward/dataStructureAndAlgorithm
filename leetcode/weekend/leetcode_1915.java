@@ -35,7 +35,9 @@ public class leetcode_1915 {
     }
 
     public long wonderfulSubstrings1(String word) {
-        int[] cnt=new int[1024];
+        int[] cnt = new int[1024];
+        return 0L;
+
     }
 
     public long wonderfulSubstrings(String word) {
