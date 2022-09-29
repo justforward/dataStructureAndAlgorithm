@@ -1,4 +1,4 @@
-package leetcode.recall;
+package leetcode.recall_dfs.recall;
 
 import java.util.Arrays;
 
