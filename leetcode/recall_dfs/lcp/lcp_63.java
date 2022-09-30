@@ -10,6 +10,6 @@ package leetcode.recall_dfs.lcp;
  */
 public class lcp_63 {
     public int[][] ballGame(int num, String[] plate) {
-
+        return new int[][]{};
     }
 }
