@@ -1,7 +1,5 @@
-package leetcode.recall_dfs.dfs;
+package leetcode.search.recall_dfs.dfs;
 
-
-import java.util.Arrays;
 
 /*
     当这个青蛙位于数组的第i个位置的时候，他上次跳跃的距离是disc
