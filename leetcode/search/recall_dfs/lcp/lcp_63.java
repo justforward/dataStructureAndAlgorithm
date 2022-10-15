@@ -1,4 +1,4 @@
-package leetcode.recall_dfs.lcp;
+package leetcode.search.recall_dfs.lcp;
 
 
 /*
