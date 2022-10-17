@@ -40,7 +40,7 @@ public class leetcode_785 {
 
         // 得到当前节点的邻居节点
         for (int n : graph[v]) {
-            // 如果这个点没有被访问过，将这个节点
+            // 如果这个点没有被访问过，将这个节点1234
             if (!visited[n]) {
                 // 将 邻居的节点全部 染成和当前相反的节点
                 colors[n] = !colors[v];
