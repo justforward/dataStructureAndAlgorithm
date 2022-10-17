@@ -27,9 +27,9 @@ public class o_2_079 {
         // 每次需要将这个元素从新构建一个才放入res中
         ArrayList<Integer> tmp = new ArrayList<>(stack);
         res.add(tmp);
-        //每天
+        // 每次
         for (int i = index; i < nums.length; i++) {
-            // 一直往里面添加数据
+            // 一直往里面添加数据 zh
             stack.add(nums[i]);
             backed(nums, i + 1);
             // 删除添加的最后一个元素
