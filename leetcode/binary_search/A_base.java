@@ -5,8 +5,31 @@ import java.util.Arrays;
 public class A_base {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3, 3, 5, 6, 7};
-        int i = Arrays.binarySearch(nums, 0, nums.length, 3);
-        System.out.println(i);
+//        int i = Arrays.binarySearch(nums, 0, nums.length, 3);
+//        System.out.println(i);
+        A_base a_base = new A_base();
+        a_base.find_right(nums, 3);
+    }
+
+    public int find_right(int[] nums, int target) {
+        // 二分找到
+        int m = nums.length;
+        int l = 0, r = m - 1;
+        // l<r 的时候
+        // 二分法找到 右边界的值
+//        while (l < r) {
+//            int mid = l + r + 1 >> 1;
+//            if (nums[mid] <= target) l = mid;
+//            else r = mid - 1;
+//        }
+
+        // 二分法 找到左边界的值
+        while (l < r) {
+            int mid = l + r + 1 >> 1;
+            if (nums[mid] >= target) r = mid;
+            else l = mid + 1;
+        }
+        return l;
     }
 
     // 找到一个目标值
