@@ -9,5 +9,7 @@ public class i_05_01 {
         String n = Integer.toBinaryString(N);
         String m = Integer.toBinaryString(M);
         // 根据
+
+        return 0;
     }
 }
