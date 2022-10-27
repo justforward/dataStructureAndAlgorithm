@@ -5,6 +5,7 @@ import java.util.Queue;
 
 /*
     题目：得到岛屿的数量
+    迷宫的 bfs和dfs
  */
 
 public class base {
