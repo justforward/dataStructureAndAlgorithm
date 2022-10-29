@@ -22,10 +22,36 @@ public class i_04_12 {
         }
     }
 
+    int ans = 0;
+
+    public int pathSum(TreeNode root, int sum) {
+        if (root == null) {
+            return 0;
+        }
+        return dfs(root.left, sum) + dfs(root.right, sum);
+    }
+
+    // 从根节点开始和为某个数的路径
+    public int dfs(TreeNode root, int sum) {
+        if (root == null) {
+            return 0;
+        }
+
+        sum -= root.val;
+
+        if (sum == 0) {
+            return 1;
+        }
+        int left = dfs(root.left, sum);
+        int right = dfs(root.right, sum);
+        return left + right;
+    }
+
+
     /*
         从根节点到当前节点的所有路径和，保留这个前缀和
      */
-    public int pathSum(TreeNode root, int sum) {
+    public int pathSum1(TreeNode root, int sum) {
         // key是前缀和, value是大小为key的前缀和出现的次数
         Map<Long, Integer> prefix = new HashMap<Long, Integer>();
         prefix.put(0L, 1);
