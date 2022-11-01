@@ -10,6 +10,10 @@ import java.util.Map;
     如果两个数的前缀总和是相同的，那么这些节点之间的元素总和为零。
         进一步扩展相同的想法，如果前缀总和currSum，在节点A和节点B处相差target，则位于节点A和节点B之间的元素之和是target。
 
+       路径不一定非得从二叉树的根节点或叶节点开始或结束，但是其方向必须向下(只能从父节点指向子节点方向)
+
+    ps：不一定非到叶子节点结束
+
  */
 public class i_04_12 {
     public class TreeNode {
@@ -22,30 +26,7 @@ public class i_04_12 {
         }
     }
 
-    int ans = 0;
 
-    public int pathSum(TreeNode root, int sum) {
-        if (root == null) {
-            return 0;
-        }
-        return dfs(root.left, sum) + dfs(root.right, sum);
-    }
-
-    // 从根节点开始和为某个数的路径
-    public int dfs(TreeNode root, int sum) {
-        if (root == null) {
-            return 0;
-        }
-
-        sum -= root.val;
-
-        if (sum == 0) {
-            return 1;
-        }
-        int left = dfs(root.left, sum);
-        int right = dfs(root.right, sum);
-        return left + right;
-    }
 
 
     /*
@@ -88,5 +69,39 @@ public class i_04_12 {
         prefixSumCount.put(currSum, prefixSumCount.get(currSum) - 1);
         return res;
     }
+
+
+
+    // 两层递归实现
+    int ans = 0;
+
+    public int pathSum(TreeNode root, int sum) {
+        preOrder(root, sum);
+        return ans;
+    }
+
+    public void preOrder(TreeNode root, int sum) {
+        if (root == null) {
+            return;
+        }
+        dfs(root, sum);
+        preOrder(root.left, sum);
+        preOrder(root.right, sum);
+    }
+
+    // 从根节点开始和为某个数的路径
+    //
+    public void dfs(TreeNode root, int sum) {
+        if (root == null) {
+            return;
+        }
+        sum -= root.val;
+        if (sum == 0) {
+            ans++;
+        }
+        dfs(root.left, sum);
+        dfs(root.right, sum);
+    }
+
 
 }
