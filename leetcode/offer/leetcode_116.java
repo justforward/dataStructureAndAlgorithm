@@ -1,37 +1,20 @@
 package leetcode.offer;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /*
-    树可以看成是一个连通且 无环 的 无向 图。
-
-    思路一：
-   1、构建图
-   2、从顶点 1开始遍历 如果出现 回来的值，直接进行删除操作 深度优先遍历
-   思路二：
-   1、并查集
-   将1—>2 2->3 3->4 直接合并为1-4
-
-
-
+    直接
  */
-public class offer_118 {
-
-    public int[] findRedundantConnection(int[][] edges) {
-        //因为是在树的基础上加了一条边，所以edges的长度就是点的数量
-        int n = edges.length;
-        UnionFind uf = new UnionFind(n + 1);
-        for (int i = 0; i < edges.length; i++) {
-            int from = edges[i][0];
-            int to = edges[i][1];
-            if (!uf.connected(from, to)) {
-                uf.union(from, to);
-            } else {
-                return new int[]{from, to};
+public class leetcode_116 {
+    public int findCircleNum(int[][] isConnected) {
+        int n = isConnected.length;
+        UnionFind uf = new UnionFind(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (isConnected[i][j] == 1) {
+                    uf.union(i, j);
+                }
             }
         }
-        return new int[]{};
+        return uf.count();
     }
 
 
@@ -90,5 +73,6 @@ public class offer_118 {
             return count;
         }
     }
+
 
 }
