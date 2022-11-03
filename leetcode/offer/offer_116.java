@@ -3,7 +3,7 @@ package leetcode.offer;
 /*
     直接
  */
-public class leetcode_116 {
+public class offer_116 {
     public int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
         UnionFind uf = new UnionFind(n);
