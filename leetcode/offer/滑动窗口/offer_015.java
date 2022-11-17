@@ -1,4 +1,4 @@
-package leetcode.offer;
+package leetcode.offer.滑动窗口;
 
 import java.util.ArrayList;
 import java.util.List;
