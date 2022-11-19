@@ -5,7 +5,10 @@ public class leetcode_018 {
         // 双指针
         int left = 0, right = 0;
         while (left < right) {
-            if(s.charAt())
+            // 从之前的位置开始读取
+//            if (s.charAt(left)) {
+//
+//            }
 
         }
 
@@ -15,7 +18,7 @@ public class leetcode_018 {
     /*
         得到不同的
      */
-    public boolean eq(){
-
+    public boolean eq() {
+        return true;
     }
 }
