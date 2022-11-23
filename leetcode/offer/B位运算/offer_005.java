@@ -1,4 +1,4 @@
-package leetcode.offer;
+package leetcode.offer.B位运算;
 
 /*
     两个单词是否有公共字符？

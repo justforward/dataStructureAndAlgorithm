@@ -1,4 +1,4 @@
-package leetcode.offer;
+package leetcode.offer.B位运算;
 
 /*
 

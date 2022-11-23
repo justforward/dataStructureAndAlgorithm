@@ -1,4 +1,4 @@
-package leetcode.offer;
+package leetcode.offer.A数学;
 
 /*
     得到每一位上的数字 相加 每次记录进位

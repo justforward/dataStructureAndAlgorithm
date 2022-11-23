@@ -1,17 +1,34 @@
-package leetcode.offer.滑动窗口;
+package leetcode.offer.D滑动窗口;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
 /*
-    滑动窗口
+    滑动窗口:
+
  */
 public class offer_015 {
     public static void main(String[] args) {
         String s = "cbaebabacd", p = "abc";
         offer_015 offer_15 = new offer_015();
         offer_15.findAnagrams(s, p);
+    }
+
+
+    public List<Integer> findAnagrams1(String win, String need) {
+        HashMap<Character, Integer> winHash = new HashMap<>();
+        HashMap<Character, Integer> needHash = new HashMap<>();
+        List<Integer> ans = new ArrayList<>();
+        for (int i = 0; i < need.length(); i++) {
+            needHash.put(win.charAt(i), needHash.put(win.charAt(i), 0) + 1);
+        }
+
+        int left = 0, right = 0, valid = 0;
+        while (right < win.length()) {
+        }
+        return ans;
     }
 
     public List<Integer> findAnagrams(String s, String p) {

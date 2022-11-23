@@ -1,7 +1,5 @@
-package leetcode.offer.滑动窗口;
+package leetcode.offer.D滑动窗口;
 
-
-import java.util.Arrays;
 
 /*
     查看s2的子串是否包含s1中的全部字母

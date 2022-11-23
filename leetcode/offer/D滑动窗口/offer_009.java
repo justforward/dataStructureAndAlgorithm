@@ -1,7 +1,4 @@
-package leetcode.offer;
-
-import java.util.LinkedList;
-import java.util.Queue;
+package leetcode.offer.D滑动窗口;
 
 /*
     nums 中乘积小于k的子数组

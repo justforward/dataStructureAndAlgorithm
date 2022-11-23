@@ -1,4 +1,4 @@
-package leetcode.offer;
+package leetcode.offer.A数学;
 
 /*
     除法 是用除数减去被除数，查看有几个存在的被除数的个数
