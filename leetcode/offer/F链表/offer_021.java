@@ -4,6 +4,9 @@ package leetcode.offer.F链表;
 /*
     删除n这个节点
     同向双指针：left right right-left=n 这样right指向最后一个节点的时候，left指向倒是第n个节点
+
+    需要一个虚指针，每次遍历的时候需要进行从虚指针上进行遍历
+
  */
 public class offer_021 {
     public class ListNode {
@@ -25,24 +28,25 @@ public class offer_021 {
 
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        // 虚指针
+
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        ListNode right = dummy.next;
-        ListNode left = dummy.next;
-        while (n-- > 0) {
-            right = right.next;
+        ListNode fast = dummy;
+        ListNode slow = dummy;
+
+        for (int i = 0; i <= n; i++) {
+            // 往前走N步
+            fast = fast.next;
         }
 
-        if (right == null) return dummy.next;
 
-        while (right.next != null) {
-            right = right.next;
-            left = left.next;
+        while (fast != null) {
+            fast = fast.next;
+            slow = slow.next;
         }
 
-        if (left.next != null) {
-            left.next = left.next.next;
-        }
+        slow.next = slow.next.next;
 
         return dummy.next;
 
