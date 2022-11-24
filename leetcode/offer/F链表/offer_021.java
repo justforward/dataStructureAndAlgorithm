@@ -2,11 +2,13 @@ package leetcode.offer.F链表;
 
 
 /*
-    删除n这个节点
-    同向双指针：left right right-left=n 这样right指向最后一个节点的时候，left指向倒是第n个节点
+    题目：链表中，删除倒数第n个节点
 
-    需要一个虚指针，每次遍历的时候需要进行从虚指针上进行遍历
 
+    1）虚指针：每次遍历的时候需要进行从虚指针上进行遍历
+    2）同向双指针
+      left right right-left=n 这样right指向最后一个节点的时候，left指向倒是第n个节点
+    3）返回整个虚指针的next
  */
 public class offer_021 {
     public class ListNode {
