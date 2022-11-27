@@ -24,7 +24,6 @@ public class offer_025 {
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummy = new ListNode(-1);
         // 得到两者的翻转
         ListNode l1Reverse = reverse(l1);
         ListNode l2Reverse = reverse(l2);
@@ -33,7 +32,7 @@ public class offer_025 {
         ListNode pre = null;
         while (l1Reverse != null && l2Reverse != null) {
             // 得到不同的
-            int curValue = l1Reverse.val + l1Reverse.val + plus;
+            int curValue = l1Reverse.val + l2Reverse.val + plus;
             plus = curValue / 10;
             ListNode curNode = new ListNode(curValue % 10);
             curNode.next = pre;
@@ -42,21 +41,34 @@ public class offer_025 {
             l2Reverse = l2Reverse.next;
         }
 
+        while (l1Reverse != null) {
+            // 根据值进行相加
+            int curValue = l1Reverse.val + plus;
+            System.out.println("l1 val: " + l1Reverse + "，curvalue：" + curValue);
+            plus = curValue / 10;
+            ListNode curNode = new ListNode(curValue % 10);
+            curNode.next = pre;
+            pre = curNode;
+            l1Reverse = l1Reverse.next;
+        }
+
         // 将数组进行翻转
-        ListNode sumNode = reverse(pre.next);
-        if (l1Reverse != null) {
-            l1 = reverse(l1Reverse);
-            dummy.next = l1;
-            l1.next = sumNode;
+        while (l2Reverse != null) {
+            // 根据值进行相加
+            int curValue = l2Reverse.val + plus;
+            plus = curValue / 10;
+            ListNode curNode = new ListNode(curValue % 10);
+            curNode.next = pre;
+            pre = curNode;
+            l2Reverse = l2Reverse.next;
         }
 
-        if (l2Reverse != null) {
-            l2 = reverse(l2Reverse);
-            dummy.next = l2;
-            l2.next = sumNode;
+        if (plus != 0) {
+            ListNode curNode = new ListNode(plus);
+            curNode.next = pre;
+            pre = curNode;
         }
-
-        return dummy.next;
+        return pre;
     }
 
 
