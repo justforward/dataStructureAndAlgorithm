@@ -23,6 +23,8 @@ public class offer_028 {
 
                 }
             }
+            return head;
         }
+
     }
 }
