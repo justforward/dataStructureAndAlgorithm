@@ -1,4 +1,4 @@
-package leetcode.offer;
+package leetcode.offer.G字符串;
 
 /*
     hashmap 这个记录是否存在一样，异或求是否是0
