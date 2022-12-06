@@ -1,6 +1,6 @@
 # TreeMap
 
-功能：去重、排序的map
+功能：可以有重复值、排序的map
 
 ```
 TreeMap<Integer> map=new TreeMap<>();
@@ -20,5 +20,9 @@ map.add();
 -   pollFirst() - 返回并从集合中删除第一个元素
 -   pollLast() - 返回并从集合中删除最后一个元素
 ```
+
+# TreeSet
+
+功能：去重，排序的map
 
 
