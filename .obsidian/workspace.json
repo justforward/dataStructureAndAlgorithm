@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
+                "file": "模板/06 搜索/3 回溯.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
+                "file": "模板/06 搜索/3 回溯.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
+                "file": "模板/06 搜索/3 回溯.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md"
+                "file": "模板/06 搜索/3 回溯.md"
               }
             }
           }
@@ -136,8 +136,11 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "c6c7e889d101dff9",
+  "active": "4393c09a89891a5b",
   "lastOpenFiles": [
+    "模板/06 搜索/1 深度优先搜索.md",
+    "模板/06 搜索/3 回溯.md",
+    "模板/04 字符、字符串操作/常见操作.md",
     "00 重要算法/容斥原理.md",
     "00 重要算法/java 常见集合类.md"
   ]

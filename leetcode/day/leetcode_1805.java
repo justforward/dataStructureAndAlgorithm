@@ -1,6 +1,7 @@
 package leetcode.day;
 
 import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Set;
 
 /*
@@ -12,8 +13,28 @@ public class leetcode_1805 {
     public static void main(String[] args) {
 
         leetcode_1805 leetcode_1805 = new leetcode_1805();
-        String s = "a1b01c001";
+        String s = "0000a000";
         System.out.println(leetcode_1805.numDifferentIntegers(s));
+    }
+
+
+    public int solution2(String word) {
+        Set<String> set = new HashSet<>();
+        int len = word.length();
+        for (int i = 0; i < len; i++) {
+            // 找到数字的开头
+            if (word.charAt(i) <= '9') {
+                // j 从i开始
+                int j = i;
+                while (j < len && word.charAt(j) <= '9') j++;
+                while (i < j && word.charAt(i) == '0') i++;
+                // 截取需要放入到set的string 长度
+                set.add(word.substring(i, j));
+                // 当前的点直接跳到j的位置
+                i = j;
+            }
+        }
+        return set.size();
     }
 
     public int numDifferentIntegers(String word) {
