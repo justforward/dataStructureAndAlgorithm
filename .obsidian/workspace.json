@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "剑指offer题解系列/039 040.md",
+                "file": "模板/03 数组/2 子数组、子串、子序列/子数组.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "剑指offer题解系列/039 040.md",
+                "file": "模板/03 数组/2 子数组、子串、子序列/子数组.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "剑指offer题解系列/039 040.md",
+                "file": "模板/03 数组/2 子数组、子串、子序列/子数组.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "剑指offer题解系列/039 040.md"
+                "file": "模板/03 数组/2 子数组、子串、子序列/子数组.md"
               }
             }
           }
@@ -151,9 +151,10 @@
   },
   "active": "951475914fe1c331",
   "lastOpenFiles": [
+    "模板/03 数组/2 子数组、子串、子序列/子串.md",
+    "剑指offer题解系列/039 040.md",
     "模板/07 图/1 图构建.md",
     "模板/02 位运算/常用操作.md",
-    "模板/03 数组/2 子数组、子串、子序列/子串.md",
     "模板/03 数组/2 子数组、子串、子序列/子序列.md",
     "模板/04 字符、字符串操作/常见操作.md",
     "模板/06 搜索/3 回溯.md",
