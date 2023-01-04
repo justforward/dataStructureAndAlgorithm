@@ -85,7 +85,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
+                "file": "模板/03 数组/1 前缀和/前缀和数组.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "18f4d3d48321b635",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "模板/03 数组/1 前缀和/前缀和树.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -182,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
+                "file": "模板/03 数组/1 前缀和/前缀和树.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
+                "file": "模板/03 数组/1 前缀和/前缀和树.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md"
+                "file": "模板/03 数组/1 前缀和/前缀和树.md"
               }
             }
           }
@@ -233,17 +245,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "438a29a544b560db",
+  "active": "18f4d3d48321b635",
   "lastOpenFiles": [
+    "模板/03 数组/3 数组下标和值的特殊表示/数字出现频次.md",
+    "模板/03 数组/1 前缀和/前缀和树.md",
+    "模板/03 数组/1 前缀和/前缀和数组.md",
+    "模板/02 位运算/常用操作.md",
+    "模板/04 字符、字符串操作/常见操作.md",
     "00 重要算法/信息熵.md",
     "Google面试题/算法题.md",
     "模板/08 树/03 前序遍历相关题目/从根节点到叶节点的路径之和.md",
     "模板/08 树/03 前序遍历相关题目/二叉树序列化和反序列化.md",
-    "模板/08 树/00 遍历模板/00 层次 后序 前序.md",
-    "00 重要算法/00 基础数据结构/1 排序.md",
-    "模板/03 数组/3 数组下标和值的特殊表示/数字出现频次.md",
-    "模板/03 数组/未命名.md",
-    "模板/08 树/02 后序遍历相关题目/814 二叉树剪枝.md",
-    "模板/04 字符、字符串操作/常见操作.md"
+    "模板/08 树/00 遍历模板/00 层次 后序 前序.md"
   ]
 }
