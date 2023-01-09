@@ -4,167 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6922e0b023a95acd",
+        "id": "36e8d8636046209c",
         "type": "tabs",
         "children": [
           {
-            "id": "4f8135261fd86e5b",
+            "id": "35bf9025ef627d9b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/04 字符、字符串操作/常见操作.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b3f6016fd8c87145",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/08 树/02 后序遍历相关题目/814 二叉树剪枝.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7a16589c93fd3014",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/08 树/03 前序遍历相关题目/二叉树序列化和反序列化.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ae29acddfda3e076",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/08 树/03 前序遍历相关题目/二叉树序列化和反序列化.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e5632295efd0cf3d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/08 树/03 前序遍历相关题目/从根节点到叶节点的路径之和.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5a07b1811b93bb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Google面试题/算法题.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "438a29a544b560db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/03 数组/1 前缀和/前缀和数组.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18f4d3d48321b635",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/03 数组/1 前缀和/前缀和树.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bfa45f812637c470",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/08 树/04 字典树/00 字典树的构建.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b740a75b967e064",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/01 数学/01 常用算法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5369e5ec743c20d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/01 数学/01 常用算法.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85138b57f169f685",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "模板/08 树/01 层次遍历相关题目/完全二叉树.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d9d838989b7b3d79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 重要算法/00 基础数据结构/1 排序.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 10
+        ]
       }
     ],
     "direction": "vertical"
@@ -230,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板/01 数学/01 常用算法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板/01 数学/01 常用算法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -269,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "模板/01 数学/01 常用算法.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -281,17 +128,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "b5369e5ec743c20d",
+  "active": "35bf9025ef627d9b",
   "lastOpenFiles": [
-    "模板/01 数学/00 精选题目.md",
+    "模板/04 字符、字符串操作/常见操作.md",
+    "模板/08 树/03 前序遍历相关题目/从根节点到叶节点的路径之和.md",
     "模板/01 数学/01 常用算法.md",
+    "模板/01 数学/00 精选题目.md",
     "模板/00 二分法/二分法.md",
     "模板/08 树/04 字典树/00 字典树的构建.md",
     "模板/08 树/04 字典树/01 数组中两个数的最大异或值.md",
     "模板/08 树/未命名.md",
     "模板/03 数组/1 前缀和/前缀和树.md",
-    "模板/03 数组/3 数组下标和值的特殊表示/数字出现频次.md",
-    "模板/03 数组/1 前缀和/前缀和数组.md",
-    "模板/02 位运算/常用操作.md"
+    "模板/03 数组/3 数组下标和值的特殊表示/数字出现频次.md"
   ]
 }
