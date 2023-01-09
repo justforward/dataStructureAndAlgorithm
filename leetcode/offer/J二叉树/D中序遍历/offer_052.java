@@ -23,9 +23,11 @@ public class offer_052 {
     public TreeNode increasingBST(TreeNode root) {
         // 中序遍历
 
+        return root;
+
     }
 
-    public TreeNode inOrder() {
-
+    public TreeNode inOrder(TreeNode root) {
+        return root;
     }
 }
