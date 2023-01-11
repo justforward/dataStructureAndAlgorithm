@@ -25,6 +25,6 @@ public class train_xxx {
             }
         }
 
-        return ;
+        return left;
     }
 }

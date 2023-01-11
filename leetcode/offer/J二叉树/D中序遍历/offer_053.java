@@ -15,7 +15,7 @@ public class offer_053 {
     class Solution {
         public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
             // 中序遍历的下一个节点
-
+            return root;
         }
     }
 }
