@@ -1,8 +1,5 @@
-package leetcode.offer.K滑动窗口;
+package leetcode.offer.K不常见数据结构;
 
-
-import java.util.LinkedList;
-import java.util.Queue;
 
 /*
     快满指针进行？
