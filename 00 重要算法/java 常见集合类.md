@@ -38,5 +38,71 @@ map.add();
 底层原理：红黑树、自平衡的二叉搜索树
 
 
+## 优先队列
 
+小顶堆
+
+```
+PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(new Comparator<int[]>() {  
+    public int compare(int[] a, int[] b) {  
+        return a[1] - b[1];  
+    }  
+});
+```
+
+大顶堆
+
+```
+PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(new Comparator<int[]>() {  
+    public int compare(int[] a, int[] b) {  
+        return a[1] - b[1];  
+    }  
+});
+```
+
+
+## 统计出现频率最大前k个值
+
+
+
+
+## 和最小的k对数
+
+
+### 题目
+
+给定两个以升序排列的整数数组 `nums1` 和 `nums2` , 以及一个整数 `k` 。
+定义一对值 `(u,v)`，其中第一个元素来自 `nums1`，第二个元素来自 `nums2` 。
+请找到和最小的 `k` 个数对 `(u1,v1)`,  `(u2,v2)` ... `(uk,vk)` 。
+
+### 代码
+
+每个下标都从0开始，只要找到下标小于当前的nums2 length的大小，就需要往优先队列中存入值
+
+```
+public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {  
+    List<List<Integer>> ans = new LinkedList<>();  
+    PriorityQueue<int[]> priorityQueue = new PriorityQueue<>(new Comparator<int[]>() {  
+        @Override  
+        public int compare(int[] o1, int[] o2) {  
+            return (nums1[o1[0]] + nums2[o1[1]]) - (nums1[o2[0]] + nums2[o2[1]]);  
+        }  
+    });  
+  
+    for (int i = 0; i < nums1.length; i++) {  
+        // 将num2的下标从0开始存放  
+        priorityQueue.add(new int[]{i, 0});  
+    }  
+  
+    while (k-- > 0 && !priorityQueue.isEmpty()) {  
+        int[] poll = priorityQueue.poll();  
+        ans.add(Arrays.asList(nums1[poll[0]], nums2[poll[1]]));  
+        // 这里统计的是数直接无法返回？需要统计下标可以  
+        if (++poll[1] < nums2.length) {  
+            priorityQueue.add(new int[]{poll[0], poll[1]});  
+        }  
+    }  
+    return ans;  
+}
+```
 
