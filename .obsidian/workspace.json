@@ -173,6 +173,16 @@
     "direction": "horizontal",
     "width": 300
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
   "active": "329a5cd5d58b9a5f",
   "lastOpenFiles": [
     "模板/08 树/05 平衡二叉树/红黑树和平衡二叉树.md",
