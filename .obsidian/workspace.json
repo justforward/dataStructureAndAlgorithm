@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 重要算法/00 基础数据结构/3 设计题.md",
+                "file": "模板/08 树/02 后序遍历相关题目/814 二叉树剪枝.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "模板/00 二分法/二分法.md",
+                "file": "模板/00 二分法/1 二分法总结.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fab88689427830e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "模板/00 二分法/1 二分法总结.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "329a5cd5d58b9a5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "模板/08 树/04 字典树/00 字典树 前缀树.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "模板/00 二分法/二分法.md",
+                "file": "模板/00 二分法/1 二分法总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "模板/00 二分法/二分法.md",
+                "file": "模板/00 二分法/1 二分法总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "模板/00 二分法/二分法.md"
+                "file": "模板/00 二分法/1 二分法总结.md"
               }
             }
           }
@@ -149,17 +173,27 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "12586238ef30a383",
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "fab88689427830e6",
   "lastOpenFiles": [
+    "模板/00 二分法/2 二分法题目.md",
     "模板/09 双指针/题目.md",
-    "模板/00 二分法/二分法.md",
-    "00 重要算法/00 基础数据结构/3 设计题.md",
-    "00 重要算法/00 基础数据结构/0 数组 链表 哈希().md",
+    "模板/00 二分法/1 二分法总结.md",
+    "模板/01 数学/00 精选题目.md",
+    "模板/01 数学/01 常用算法.md",
     "模板/08 树/02 后序遍历相关题目/814 二叉树剪枝.md",
     "模板/08 树/04 字典树/00 字典树 前缀树.md",
     "模板/08 树/05 平衡二叉树/红黑树和平衡二叉树.md",
     "00 重要算法/java 常见集合类.md",
-    "模板/04 字符、字符串操作/常见操作.md",
-    "模板/01 数学/01 常用算法.md"
+    "模板/04 字符、字符串操作/常见操作.md"
   ]
 }

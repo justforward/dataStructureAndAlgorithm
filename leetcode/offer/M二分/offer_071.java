@@ -92,7 +92,9 @@ public class offer_071 {
                 }
             }
             // 最后改成返回 left - 1 由于终止条件是[right,right+1] right=left-1 此时
-            if (right < 0) return -1;
+            if (right < 0) {
+                return -1;
+            }
             return nums[right] == target ? right : -1;
         }
     }
