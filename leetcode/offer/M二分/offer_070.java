@@ -33,7 +33,7 @@ public class offer_070 {
                 }
             } else { // 下标是奇数
                 if (nums[mid] == nums[mid - 1]) { //如果和前一个值相等，说明乱序的位置在后面
-                    left = mid + 1;
+                    left = mid + 1;// 跳过当前的数
                 } else {// mid 可能是那个数字
                     right = mid;
                 }
@@ -41,6 +41,14 @@ public class offer_070 {
 
         }
         return nums[right];
+    }
+
+
+    public int singleNonDuplicate1(int[] nums) {
+
+        int l = 0, r = nums.length - 1;
+
+
 
     }
 }

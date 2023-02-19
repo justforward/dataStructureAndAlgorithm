@@ -12,6 +12,7 @@ public class offer_072 {
         // 二分查找，根据x 得到
         // 为什么right 取中值，因为开方之后不可能大于中间的值
         int left = 1, right = x / 2;
+        int ans = 0;
         while (left <= right) {
             int mid = left + (right - left) / 2;
             if (mid > x / mid) {
@@ -26,4 +27,22 @@ public class offer_072 {
         return right;
     }
 
+
+    // 找到满足条件的边界，使用一个特殊的值 来记录
+    public int mySqrt2(int x) {
+        if (x == 1) return 1;
+        int left = 1, right = x / 2;
+        int ans = -1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (mid > x / mid) {
+                right = mid - 1;
+            } else {
+                // 小于等于x/mid 的最大值
+                ans = mid;
+                left = mid + 1;
+            }
+        }
+        return ans;
+    }
 }
