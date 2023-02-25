@@ -29,7 +29,7 @@ public class offer_072 {
 
 
     // 找到满足条件的边界，使用一个特殊的值 来记录
-    public int mySqrt2(int x) {
+    public int mySqrt3(int x) {
         if (x == 1) return 1;
         int left = 1, right = x / 2;
         int ans = -1;
@@ -44,5 +44,21 @@ public class offer_072 {
             }
         }
         return ans;
+    }
+
+    // 小于等于
+    public int mySqrt2(int x) {
+        if (x == 1) return 1;
+        int left = 1, right = x / 2;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            int t = x / mid;
+            if (mid <= t) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return right;
     }
 }

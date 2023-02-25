@@ -30,6 +30,16 @@ map.add();
 -   **floor(element)** - 返回小于指定元素(element)的元素中最大的元素。如果传递的元素(element)存在于树集中，则返回作为参数传递的元素(element)。
 
 
+//遍历 需要迭代器
+Iterator iterator = map.keySet().iterator();  
+while (iterator.hasNext()) {  
+    Integer key = (Integer) iterator.next();  
+    // 获取Value  
+    for (int j = 0; j < map.get(key); j++) {  
+        list.add(key);  
+    }  
+}
+
 ```
 
 # TreeSet

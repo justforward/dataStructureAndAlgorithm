@@ -44,11 +44,4 @@ public class offer_070 {
     }
 
 
-    public int singleNonDuplicate1(int[] nums) {
-
-        int l = 0, r = nums.length - 1;
-
-
-
-    }
 }
