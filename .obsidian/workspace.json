@@ -94,9 +94,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ed5ca363e804992a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8ae556e4f7921c7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 面试算法总结/算法思想/动态规划.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -223,17 +247,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e84047a2b6716523",
+  "active": "8ae556e4f7921c7a",
   "lastOpenFiles": [
+    "01 面试算法总结/算法思想/未命名.md",
+    "未命名.md",
+    "01 面试算法总结/算法思想/动态规划.md",
     "01 面试算法总结/算法思想/回溯.md",
     "模板/06 搜索/3 回溯.md",
     "01 面试算法总结/未命名.md",
     "01 面试算法总结/排序.md",
     "01 面试算法总结/00 排序/1  快排.md",
     "01 面试算法总结/算法思想/分治.md",
-    "01 面试算法总结/00 排序/2 归并.md",
-    "00 重要算法/00 基础数据结构/1 排序.md",
-    "00 重要算法/java 常见集合类.md",
-    "00 重要算法/00 基础数据结构/0 数组 链表 哈希().md"
+    "01 面试算法总结/00 排序/2 归并.md"
   ]
 }
