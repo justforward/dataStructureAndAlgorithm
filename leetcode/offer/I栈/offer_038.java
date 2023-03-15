@@ -32,6 +32,7 @@ i = 5，stack = [2,3,4]，temperatures[5] 高于 temperatures[4]，将 4 从 sta
 i = 6，stack = [2,5]，temperatures[6] 高于 temperatures[5]，将 5 从 stack 中取出，result[5] = 6 - 5 = 1，，将 6 放入栈中；
 i = 7，stack = [2,6]，temperatures[7] 低于 temperatures[6]，将 7 放入栈中；
 
+
  */
 public class offer_038 {
     public int[] dailyTemperatures(int[] temp) {
@@ -40,6 +41,7 @@ public class offer_038 {
 
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < size; i++) {
+
             while (!stack.isEmpty() && temp[stack.peek()] < temp[i]) {
                 int index = stack.pop();
                 ans[index] = i - index;
